@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DatabaseTest.AanpassenVragen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="up_vraag_id" Placeholder="Vraag nummer to load"/>
+            <Entry x:Name="up_vraag" Placeholder="Vraag"/>
+            <Entry x:Name="up_antwoord1" Placeholder="Antwoord1"/>
+            <Entry x:Name="up_antwoord2" Placeholder="Antwoord2"/>
+            <Entry x:Name="up_antwoord3" Placeholder="Antwoord3"/>
+            <Entry x:Name="up_antwoord4" Placeholder="Antwoord4"/>
+            <Entry x:Name="up_antwoord_nummer" Placeholder="Antwoord nummer"/>
+            <Button Text="Laad vraag" Clicked="LoadQuestion"/>
+            <Button Text="Pas vraag aan" Clicked="UpdateQuestion"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

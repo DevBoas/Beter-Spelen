@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DatabaseTest.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Entry x:Name="form_username" Placeholder="Username"/>
+        <Entry x:Name="form_password" IsPassword="True" Placeholder="Password"/>
+        <Button Text="Login" Clicked="LoginUser"/>
+        <Label HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Click " FontSize="20"/>
+                    <Span Text="here" TextColor="Blue" TextDecorations="Underline" FontSize="20">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://docs.microsoft.com/xamarin/" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text=" to create an account" FontSize="20" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label>Debug below</Label>
+        <Button Text="Register User" Clicked="RegisterUser"/>
+        <Button Text="Display DB Contents" Clicked="DisplayDB"/>
+        <Label Text="Here goes the output..." x:Name="Output"/>
+    </StackLayout>
+</ContentPage>

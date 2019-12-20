@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DatabaseTest.Beter_Spellen">
+    <ContentPage.Content>
+        <StackLayout Spacing="15">
+            <Label x:Name="Label_Vraag1" Font="Bold,20">...</Label>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox1" ClassId="1" CheckedChanged="handleChoice1"></CheckBox>
+                <Label x:Name="antwoord1" VerticalTextAlignment="Center" FontSize="14">overbellastte</Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox2" ClassId="2" CheckedChanged="handleChoice1"></CheckBox>
+                <Label x:Name="antwoord2" VerticalTextAlignment="Center" FontSize="14">overbelaste</Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox3" ClassId="3" CheckedChanged="handleChoice1"></CheckBox>
+                <Label x:Name="antwoord3" VerticalTextAlignment="Center" FontSize="14">overbelastte</Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox4" ClassId="4" CheckedChanged="handleChoice1"></CheckBox>
+                <Label x:Name="antwoord4" VerticalTextAlignment="Center" FontSize="14">overbellaste</Label>
+            </StackLayout>
+
+            <Label x:Name="Label_Vraag2" Font="Bold,20">Een sterretje in een tekst wordt ook wel een ........  genoemd.</Label>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox5" ClassId="5" CheckedChanged="handleChoice2"></CheckBox>
+                <Label x:Name="antwoord5" VerticalTextAlignment="Center" FontSize="14">asterix</Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox6" ClassId="6" CheckedChanged="handleChoice2"></CheckBox>
+                <Label x:Name="antwoord6" VerticalTextAlignment="Center" FontSize="14">asterisk</Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox7" ClassId="7" CheckedChanged="handleChoice2"></CheckBox>
+                <Label x:Name="antwoord7" VerticalTextAlignment="Center" FontSize="14">asteriks</Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="CheckBox8" ClassId="8" CheckedChanged="handleChoice2"></CheckBox>
+                <Label x:Name="antwoord8" VerticalTextAlignment="Center" FontSize="14">Asterix</Label>
+            </StackLayout>
+            <Button HorizontalOptions="End" Clicked="CheckResult" Text="Verzend" Margin="0, 30, 20, 0"></Button>
+        </StackLayout>   
+    </ContentPage.Content>
+</ContentPage>

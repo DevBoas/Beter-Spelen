@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DatabaseTest.UploadVragen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="reg_vraag" Placeholder="Vraag"/>
+            <Entry x:Name="reg_antwoord1" Placeholder="Antwoord1"/>
+            <Entry x:Name="reg_antwoord2" Placeholder="Antwoord2"/>
+            <Entry x:Name="reg_antwoord3" Placeholder="Antwoord3"/>
+            <Entry x:Name="reg_antwoord4" Placeholder="Antwoord4"/>
+            <Entry x:Name="reg_antwoord_nummer" Placeholder="Antwoord nummer"/>
+            <Button Text="Voeg vraag toe" Clicked="AddVraag"/>
+            <Button Text="Ga naar vragen aanpassen..." Clicked="NavigateEditing"/>
+            <Button Text="Display DB Contents" Clicked="DisplayDB"/>
+            <Label Text="Here goes the output..." x:Name="Output"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
